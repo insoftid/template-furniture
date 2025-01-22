@@ -10,6 +10,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'black1': "#010102",
+        'grey1': "#404043",
+      },
+      fontFamily: {
+        "poppins": ["Poppins", "sans-serif"],
+        "montserrat": ["Montserrat", "sans-serif"]
       },
     },
   },
