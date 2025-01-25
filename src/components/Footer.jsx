@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-3 gap-5">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
       <div className="flex flex-col gap-5 col-span-2">
         <div className="flex gap-3 align-center">
           <img src="assets/Logo.png" alt="logo" className="w-9 h-9" />
@@ -10,7 +10,7 @@ const Footer = () => {
             InSoft.
           </h1>
         </div>
-        <h1 className="text-white text-[64px] leading-[62px] font-medium">
+        <h1 className="text-white text-[52px] lg:text-[64px] leading-[62px] font-medium">
           Hadirkan{" "}
           <span className="underline decoration-[#2C57F4]">
             Keindahan dan Kenyamanan
@@ -18,12 +18,12 @@ const Footer = () => {
           di Rumah Anda
         </h1>
       </div>
-      <div className="grid grid-cols-2">
-        <div className="flex flex-col gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex flex-col gap-3 order-2 lg:order-1">
           <h1 className="text-white font-semibold font-montserrat text-[26px] underline">
             Menu
           </h1>
-          <ul className="flex flex-col gap-1">
+          <ul className="flex flex-row justify-between lg:flex-col gap-1">
             <li className="relative">
               <a
                 href="#"
