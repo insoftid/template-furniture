@@ -368,8 +368,8 @@ lg:w-[374px] */}
       </section>
 
       {/* Kontak Section */}
-      <section className="w-full bg-black p-[75px] flex flex-col gap-16">
-        <div id="kontak" className="grid grid-cols-2 gap-10">
+      <section className="w-full bg-black p-5 lg:p-[75px] flex flex-col gap-16">
+        <div id="kontak" className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex gap-[20px]">
             <div className="p-3 mt-4 h-6 bg-white"></div>
             <div className="flex gap-3 flex-col">
