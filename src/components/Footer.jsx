@@ -18,12 +18,12 @@ const Footer = () => {
           di Rumah Anda
         </h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col gap-3 order-2 lg:order-1">
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="flex flex-col gap-3 order-2 md:order-1">
           <h1 className="text-white font-semibold font-montserrat text-[26px] underline">
             Menu
           </h1>
-          <ul className="flex flex-row justify-between lg:flex-col gap-1">
+          <ul className="grid grid-cols-2 md:grid-cols-1 gap-1">
             <li className="relative">
               <a
                 href="#"
@@ -74,7 +74,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="md:order-2 order-1">
           <h1 className="text-white font-semibold font-montserrat text-[26px] underline">
             Media Sosial
           </h1>
