@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import MyNavbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
 import TestimoniCard from "../components/TestimoniCard";
@@ -79,10 +79,10 @@ export default function Home() {
 
   return (
     <div className="font-poppins">
-      {/* <Navbar /> */}
+      <MyNavbar />
 
       {/* Hero Section */}
-      <section className="px-5 lg:px-[75px] py-5 grid grid-cols-12">
+      <section className="px-5 lg:px-[75px] py-5 grid grid-cols-12 pt-20">
         <div className="col-span-12 lg:col-span-8">
           <p className="text-[#333338] text-sm">#Best Quality interior</p>
           <h1 className="text-black1 text-5xl lg:text-[64px] leading-[52px] lg:leading-[62px] font-medium">
@@ -107,15 +107,12 @@ export default function Home() {
       </section>
 
       {/* Testimoni Section */}
-      <section className="pt-5 md:pb-32 lg:pb-28 relative w-full right-0">
+      <section className="pt-5 md:pb-20 lg:pb-28 relative w-full right-0">
         <div>
           <img className="w-full h-60 lg:h-96 object-cover" src="assets/bg.png" alt="" />
         </div>
-        <div className="absolute -bottom-28 md:bottom-10 lg:bottom-2 w-full flex px-5 lg:px-[75px]">
+        <div className="absolute -bottom-28 md:bottom-0 lg:bottom-2 w-full flex px-5 lg:px-[75px]">
           <div className="w-full py-5 grid gap-1 m-auto grid-cols-3">
-            {/* lg:w-[374px]
-lg:w-[374px]
-lg:w-[374px] */}
             <div className="bg-black text-white py-[46px] flex flex-col justify-center items-center gap-1">
               <h1 className="text-3xl lg:text-[68px] font-bold">8+</h1>
               <p className="text-base text-center lg:text-[20px] font-medium lg:font-semibold font-montserrat">
@@ -366,90 +363,14 @@ lg:w-[374px] */}
           </div>
         </div>
       </section>
-      {/* <section className="p-5 lg:px-[75px] pb-10">
-        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="col-span-12 lg:col-span-6">
-            <div className="flex gap-[20px]">
-              <div className="p-3 mt-4 h-6 bg-white"></div>
-              <div className="flex gap-3 flex-col">
-                <h1 className="font-semibold text-white text-2xl text-[44px] font-montserrat uppercase">
-                  apa kata pelanggan kami
-                </h1>
-                <p className="text-sm text-white font-poppins text-justify">
-                Kami bangga telah menjadi bagian dari perjalanan banyak pelanggan untuk menciptakan ruang impian mereka. Inilah beberapa cerita dan ulasan dari mereka yang telah merasakan kualitas produk dan layanan kami
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute top-4 w-6 h-6 bg-black"></div>
-              <h1 className="ml-10 mt-[30px] font-semibold text-2xl lg:text-[44px] leading-tight font-montserrat uppercase">
-                apa kata pelanggan kami
-              </h1>
-            </div>
-            <p className="text-sm text-grey1 ml-10 text-justify">
-              Kami bangga telah menjadi bagian dari perjalanan banyak pelanggan
-              untuk menciptakan ruang impian mereka. Inilah beberapa cerita dan
-              ulasan dari mereka yang telah merasakan kualitas produk dan
-              layanan kami
-            </p>
-          </div>
-          <div className="col-span-12 lg:col-span-6 w-full">
-            <div id="scroll-container" className="flex gap-3 overflow-x-scroll">
-              {
-                testimoini.map((data) => (
-                  <TestimoniCard key={data.id} testimoni={data}/>
-                ))
-              }
-            </div>
-            <div className="w-full flex justify-center gap-2 mt-2">
-              <button onClick={() => scrollLeft()} className="bg-black p-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  width="20"
-                  height="10"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="white"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
-                  />
-                </svg>
-              </button>
-              <button onClick={() => scrollRight()} className="bg-black p-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  width="20"
-                  height="10"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="white"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Kontak Section */}
       <section className="w-full bg-black p-5 lg:p-[75px] flex flex-col gap-16">
         <div id="kontak" className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex gap-[20px]">
-            <div className="p-3 mt-4 h-6 bg-white"></div>
+            <div className="p-3 lg:mt-4 h-6 bg-white"></div>
             <div className="flex gap-3 flex-col">
-              <h1 className="font-semibold text-white text-2xl text-[44px] font-montserrat uppercase">
+              <h1 className="font-semibold text-white text-2xl lg:text-[44px] font-montserrat uppercase">
                 Hubungi Kami
               </h1>
               <p className="text-sm text-white font-poppins text-justify">

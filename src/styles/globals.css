@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 *{
-  border: 1 solid red;
+  /* border: 1 solid red; */
 }
 .container {
   @apply max-w-screen-xl mx-auto;
