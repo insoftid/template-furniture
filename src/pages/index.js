@@ -259,18 +259,18 @@ lg:w-[374px] */}
       </section>
 
       {/* Product Section */}
-      <section className="px-[75px]">
+      <section className="p-5 lg:px-[75px]">
         <div className=" grid grid-cols-12">
-          <div className="col-span-8">
+          <div className="col-span-12 lg:col-span-8">
             <div className="relative">
               <div className="absolute top-4 w-6 h-6 bg-black"></div>
-              <h1 className="ml-10 mt-[30px] font-semibold text-[44px] leading-tight font-montserrat uppercase">
+              <h1 className="ml-10 mt-[30px] font-semibold text-2xl lg:text-[44px] leading-tight font-montserrat uppercase">
                 produk furnitur untuk hunian anda
               </h1>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-4 my-[10px]">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 my-[10px]">
           {showAll
             ? products.map((product) => (
                 <ProductCard key={product.id} product={product} />
