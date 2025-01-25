@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -20,7 +21,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
+                className="footer-item font-poppins text-sm font-medium uppercase text-white"
               >
                 beranda
               </a>
@@ -28,7 +29,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
+                className="footer-item font-poppins text-sm font-medium uppercase text-white"
               >
                 tentang kami
               </a>
@@ -36,7 +37,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
+                className="footer-item font-poppins text-sm font-medium uppercase text-white"
               >
                 produk
               </a>
@@ -44,7 +45,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
+                className="footer-item font-poppins text-sm font-medium uppercase text-white"
               >
                 testimoni
               </a>
@@ -52,7 +53,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
+                className="footer-item font-poppins text-sm font-medium uppercase text-white"
               >
                 lokasi
               </a>
@@ -60,7 +61,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
+                className="footer-item font-poppins text-sm font-medium uppercase text-white"
               >
                 kontak
               </a>
