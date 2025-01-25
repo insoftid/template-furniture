@@ -1,14 +1,14 @@
 const TestimoniCard = ({ testimoni }) => {
   return (
     // <div className="w-10">
-    <div className="p-5 flex flex-col gap-10 justify-between w-[327px] border border-slate-600 flex-shrink-0">
-      <p className="font-noto-serif text-black text-center text-2xl underline">
+    <div className="flex w-[327px] flex-shrink-0 flex-col justify-between gap-10 border border-slate-600 p-5">
+      <p className="font-noto-serif text-center text-2xl text-black underline">
         "{testimoni.text}"
       </p>
-      <div className="flex gap-3 justify-center items-center">
-        <img src={testimoni.profil} alt="" className="w-10 h-10 object-cover" />
+      <div className="flex items-center justify-center gap-3">
+        <img src={testimoni.profil} alt="" className="h-10 w-10 object-cover" />
         <div className="flex flex-col gap-1">
-          <p className="font-poppins text-black text-center text-base break-words">
+          <p className="break-words text-center font-poppins text-base text-black">
             {testimoni.name}
           </p>
           <div className="flex gap-2">

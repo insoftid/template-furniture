@@ -1,55 +1,37 @@
-import React from "react";
-import "./Navbar.css";
-import { Button, Navbar } from "flowbite-react";
+import React from 'react';
+import './Navbar.css';
+import { Button, Navbar } from 'flowbite-react';
 
 const Menu = () => {
   return (
-    <ul className="flex flex-col md:flex-row gap-3 lg:gap-[30px]">
+    <ul className="flex flex-col gap-3 bg-transparent md:flex-row lg:gap-[30px]">
       <li className="relative">
-        <a
-          href="#"
-          className="navbar-item text-black1 font-medium font-poppins text-sm uppercase"
-        >
+        <a href="#" className="navbar-item font-poppins text-sm font-medium uppercase text-black1">
           beranda
         </a>
       </li>
       <li className="relative">
-        <a
-          href="#"
-          className="navbar-item text-black1 font-medium font-poppins text-sm uppercase"
-        >
+        <a href="#" className="navbar-item font-poppins text-sm font-medium uppercase text-black1">
           tentang kami
         </a>
       </li>
       <li className="relative">
-        <a
-          href="#"
-          className="navbar-item text-black1 font-medium font-poppins text-sm uppercase"
-        >
+        <a href="#" className="navbar-item font-poppins text-sm font-medium uppercase text-black1">
           produk
         </a>
       </li>
       <li className="relative">
-        <a
-          href="#"
-          className="navbar-item text-black1 font-medium font-poppins text-sm uppercase"
-        >
+        <a href="#" className="navbar-item font-poppins text-sm font-medium uppercase text-black1">
           testimoni
         </a>
       </li>
       <li className="relative">
-        <a
-          href="#"
-          className="navbar-item text-black1 font-medium font-poppins text-sm uppercase"
-        >
+        <a href="#" className="navbar-item font-poppins text-sm font-medium uppercase text-black1">
           lokasi
         </a>
       </li>
       <li className="relative">
-        <a
-          href="#"
-          className="navbar-item text-black1 font-medium font-poppins text-sm uppercase"
-        >
+        <a href="#" className="navbar-item font-poppins text-sm font-medium uppercase text-black1">
           kontak
         </a>
       </li>
@@ -57,16 +39,16 @@ const Menu = () => {
   );
 };
 
-const NavMenu = (props ) => {
+const NavMenu = (props) => {
   console.log(props.collapse);
   return (
     <>
       {props.collapse == true ? (
-        <Navbar.Collapse className="transition-all duration-300 ease-in-out  md:hidden">
+        <Navbar.Collapse className="bg-transparent transition-all duration-300 ease-in-out md:hidden">
           <Menu />
         </Navbar.Collapse>
       ) : (
-        <Navbar className="transition-all duration-300 ease-in-out hidden md:inline-block">
+        <Navbar className="hidden bg-transparent transition-all duration-300 ease-in-out md:inline-block">
           <Menu />
         </Navbar>
       )}
@@ -76,22 +58,23 @@ const NavMenu = (props ) => {
 
 const MyNavbar = () => {
   return (
-    <Navbar fluid rounded className="fixed top-0 left-0 w-full z-20">
-      <div className="flex justify-between items-center gap-5 lg:gap-8">
+    <Navbar
+      fluid
+      rounded
+      className="fixed left-0 top-0 z-20 w-full bg-opacity-75 backdrop-blur-lg backdrop-filter lg:bg-opacity-50"
+    >
+      <div className="flex items-center justify-between gap-5 lg:gap-8">
+        <Navbar.Toggle className="bg-white" />
         <Navbar.Brand href="https://flowbite-react.com">
-          <img
-            src="assets/Logo.png"
-            className="mr-3 w-9 h-9"
-            alt="InSoft Logo"
-          />
-          <span className="self-center whitespace-nowrap text-lg font-bold font-montserrat text-black1">
+          <img src="assets/Logo.png" className="mr-3 h-9 w-9" alt="InSoft Logo" />
+          <span className="self-center whitespace-nowrap font-montserrat text-lg font-bold text-black1">
             InSoft.
           </span>
         </Navbar.Brand>
         <NavMenu collapse={false} />
       </div>
-      <div className="flex md:order-2 items-center gap-2">
-        <div className="flex gap-1 lg:gap-[10px] justify-end">
+      <div className="flex items-center gap-2 md:order-2">
+        <div className="flex justify-end gap-1 lg:gap-[10px]">
           <a href="">
             <img src="assets/whatsapp.svg" alt="whatsapp" />
           </a>
@@ -105,7 +88,6 @@ const MyNavbar = () => {
             <img src="assets/linkedin.svg" alt="linkedin" />
           </a>
         </div>
-        <Navbar.Toggle />
       </div>
       <NavMenu collapse={true} />
     </Navbar>

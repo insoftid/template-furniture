@@ -1,57 +1,57 @@
-import React from "react";
-import MyNavbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProductCard from "../components/ProductCard";
-import TestimoniCard from "../components/TestimoniCard";
+import React from 'react';
+import MyNavbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ProductCard from '../components/ProductCard';
+import TestimoniCard from '../components/TestimoniCard';
 
 const products = [
   {
     id: 1,
-    name: "Sofa Putih",
-    image: "assets/sofa.png",
+    name: 'Sofa Putih',
+    image: 'assets/sofa.png',
   },
   {
     id: 2,
-    name: "Sofa Putih",
-    image: "assets/sofa.png",
+    name: 'Sofa Putih',
+    image: 'assets/sofa.png',
   },
   {
     id: 3,
-    name: "Sofa Putih",
-    image: "assets/sofa.png",
+    name: 'Sofa Putih',
+    image: 'assets/sofa.png',
   },
   {
     id: 4,
-    name: "Sofa Putih",
-    image: "assets/sofa.png",
+    name: 'Sofa Putih',
+    image: 'assets/sofa.png',
   },
   {
     id: 5,
-    name: "Sofa Putih",
-    image: "assets/sofa.png",
+    name: 'Sofa Putih',
+    image: 'assets/sofa.png',
   },
 ];
 
 const testimoini = [
   {
     id: 1,
-    text: "Luar biasa! Furnitur dari Insoft sangat berkualitas dan desainnya modern. Proses pemesanan juga mudah dan pengirimannya tepat waktu. Sangat puas!",
-    profil: "assets/testi1.jpeg",
-    name: "Elon Musk, Bandung",
+    text: 'Luar biasa! Furnitur dari Insoft sangat berkualitas dan desainnya modern. Proses pemesanan juga mudah dan pengirimannya tepat waktu. Sangat puas!',
+    profil: 'assets/testi1.jpeg',
+    name: 'Elon Musk, Bandung',
     rating: 5,
   },
   {
     id: 2,
-    text: "Saya suka dengan pilihan furnitur yang banyak dan harga yang kompetitif. Timnya juga sangat membantu dalam memberikan rekomendasi.",
-    profil: "assets/testi1.jpeg",
-    name: "Rizal, Bandung",
+    text: 'Saya suka dengan pilihan furnitur yang banyak dan harga yang kompetitif. Timnya juga sangat membantu dalam memberikan rekomendasi.',
+    profil: 'assets/testi1.jpeg',
+    name: 'Rizal, Bandung',
     rating: 4,
   },
   {
     id: 2,
-    text: "Saya suka dengan pilihan furnitur yang banyak dan harga yang kompetitif. Timnya juga sangat membantu dalam memberikan rekomendasi.",
-    profil: "assets/testi1.jpeg",
-    name: "Rizal, Bandung",
+    text: 'Saya suka dengan pilihan furnitur yang banyak dan harga yang kompetitif. Timnya juga sangat membantu dalam memberikan rekomendasi.',
+    profil: 'assets/testi1.jpeg',
+    name: 'Rizal, Bandung',
     rating: 5,
   },
 ];
@@ -64,16 +64,16 @@ export default function Home() {
   };
 
   const scrollLeft = () => {
-    document.getElementById("scroll-container").scrollBy({
+    document.getElementById('scroll-container').scrollBy({
       left: -300,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   const scrollRight = () => {
-    document.getElementById("scroll-container").scrollBy({
+    document.getElementById('scroll-container').scrollBy({
       left: 300,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
@@ -82,52 +82,47 @@ export default function Home() {
       <MyNavbar />
 
       {/* Hero Section */}
-      <section className="px-5 lg:px-[75px] py-5 grid grid-cols-12 pt-20">
+      <section className="grid grid-cols-12 px-5 py-5 pt-20 lg:px-[75px]">
         <div className="col-span-12 lg:col-span-8">
-          <p className="text-[#333338] text-sm">#Best Quality interior</p>
-          <h1 className="text-black1 text-5xl lg:text-[64px] leading-[52px] lg:leading-[62px] font-medium">
-            Hadirkan{" "}
-            <span className="underline decoration-[#2C57F4]">
-              Keindahan dan Kenyamanan
-            </span>
+          <p className="text-sm text-[#333338]">#Best Quality interior</p>
+          <h1 className="text-5xl font-medium leading-[52px] text-black1 lg:text-[64px] lg:leading-[62px]">
+            Hadirkan{' '}
+            <span className="underline decoration-[#2C57F4]">Keindahan dan Kenyamanan</span>
             <br className="md:hidden lg:inline-block" />
             di Rumah Anda
           </h1>
         </div>
         <div className="col-span-12 lg:col-span-4">
-          <h1 className="font-medium text-[32px] hidden md:inline-block">
-            About Us
-          </h1>
-          <p className="font-poppins text-sm  text-justify">
-            Temukan furnitur berkualitas tinggi yang dirancang untuk
-            mempercantik interior rumah Anda. Kami menghadirkan solusi desain
-            modern yang sesuai dengan gaya hidup Anda.
+          <h1 className="hidden text-[32px] font-medium md:inline-block">About Us</h1>
+          <p className="text-justify font-poppins text-sm">
+            Temukan furnitur berkualitas tinggi yang dirancang untuk mempercantik interior rumah
+            Anda. Kami menghadirkan solusi desain modern yang sesuai dengan gaya hidup Anda.
           </p>
         </div>
       </section>
 
       {/* Testimoni Section */}
-      <section className="pt-5 md:pb-20 lg:pb-28 relative w-full right-0">
+      <section className="relative right-0 w-full pt-5 md:pb-20 lg:pb-28">
         <div>
-          <img className="w-full h-60 lg:h-96 object-cover" src="assets/bg.png" alt="" />
+          <img className="h-60 w-full object-cover lg:h-96" src="assets/bg.png" alt="" />
         </div>
-        <div className="absolute -bottom-28 md:bottom-0 lg:bottom-2 w-full flex px-5 lg:px-[75px]">
-          <div className="w-full py-5 grid gap-1 m-auto grid-cols-3">
-            <div className="bg-black text-white py-[46px] flex flex-col justify-center items-center gap-1">
-              <h1 className="text-3xl lg:text-[68px] font-bold">8+</h1>
-              <p className="text-base text-center lg:text-[20px] font-medium lg:font-semibold font-montserrat">
+        <div className="absolute -bottom-28 flex w-full px-5 md:bottom-0 lg:bottom-2 lg:px-[75px]">
+          <div className="m-auto grid w-full grid-cols-3 gap-1 py-5">
+            <div className="flex flex-col items-center justify-center gap-1 bg-black py-[46px] text-white lg:gap-5">
+              <h1 className="text-3xl font-bold lg:text-[68px]">8+</h1>
+              <p className="text-center font-montserrat text-base font-medium lg:text-[20px] lg:font-semibold">
                 Produk
               </p>
             </div>
-            <div className="bg-black text-white py-[46px] flex flex-col justify-center items-center gap-1">
-              <h1 className="text-3xl lg:text-[68px] font-bold">1000+</h1>
-              <p className="text-base text-center lg:text-[20px] font-medium lg:font-semibold font-montserrat">
+            <div className="flex flex-col items-center justify-center gap-1 bg-black py-[46px] text-white lg:gap-5">
+              <h1 className="text-3xl font-bold lg:text-[68px]">1000+</h1>
+              <p className="text-center font-montserrat text-base font-medium lg:text-[20px] lg:font-semibold">
                 Unit Produk Terjual
               </p>
             </div>
-            <div className="bg-black text-white py-[46px] flex flex-col justify-center items-center gap-1">
-              <h1 className="text-3xl lg:text-[68px] font-bold">5/5</h1>
-              <p className="text-base text-center lg:text-[20px] font-medium lg:font-semibold font-montserrat">
+            <div className="flex flex-col items-center justify-center gap-1 bg-black py-[46px] text-white lg:gap-5">
+              <h1 className="text-3xl font-bold lg:text-[68px]">5/5</h1>
+              <p className="text-center font-montserrat text-base font-medium lg:text-[20px] lg:font-semibold">
                 Rating Google
               </p>
             </div>
@@ -136,12 +131,12 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="p-5 lg:px-[75px] mt-28 md:mt-0 pb-14 flex flex-col gap-5">
+      <section className="mt-28 flex flex-col gap-5 p-5 pb-14 md:mt-0 lg:px-[75px]">
         <div className="grid grid-cols-12">
           <div className="col-span-12 lg:col-span-6">
             <div className="relative">
-              <div className="absolute lg:top-4 w-6 h-6 bg-black"></div>
-              <h1 className="ml-12 font-semibold text-2xl lg:text-[44px] font-montserrat uppercase leading-tight">
+              <div className="absolute h-6 w-6 bg-black lg:top-4"></div>
+              <h1 className="ml-12 font-montserrat text-2xl font-semibold uppercase leading-tight lg:text-[44px]">
                 kenali perusahaan kami lebih jauh
               </h1>
             </div>
@@ -149,39 +144,37 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-12 bg-[#F4F4F5]">
           <div className="col-span-12 lg:col-span-6">
-            <img src="assets/img1.png" alt="" className="w-full md:h-72 lg:h-auto object-cover" />
+            <img src="assets/img1.png" alt="" className="w-full object-cover md:h-72 lg:h-auto" />
           </div>
-          <div className="col-span-12 lg:col-span-6 p-8 lg:p-12 bg-[#F4F4F5]">
-            <h1 className="font-medium text-[32px]">About Us</h1>
-            <p className="text-sm md:text-base text-grey1 font-montserrat leading-tight text-justify">
-              Selamat datang di [Nama Perusahaan Anda], mitra terpercaya Anda
-              dalam menghadirkan furnitur berkualitas tinggi untuk hunian yang
-              lebih nyaman dan indah. Kami adalah perusahaan yang berdedikasi
-              untuk memberikan solusi interior terbaik dengan menggabungkan
-              keahlian, kreativitas, dan bahan terbaik.
+          <div className="col-span-12 bg-[#F4F4F5] p-8 lg:col-span-6 lg:p-12">
+            <h1 className="text-[32px] font-medium">About Us</h1>
+            <p className="text-justify font-montserrat text-sm leading-tight text-grey1 md:text-base">
+              Selamat datang di [Nama Perusahaan Anda], mitra terpercaya Anda dalam menghadirkan
+              furnitur berkualitas tinggi untuk hunian yang lebih nyaman dan indah. Kami adalah
+              perusahaan yang berdedikasi untuk memberikan solusi interior terbaik dengan
+              menggabungkan keahlian, kreativitas, dan bahan terbaik.
             </p>
-            <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 mt-5">
+            <div className="mt-5 flex flex-col gap-5 lg:flex-row lg:gap-10">
               <div>
-                <h1 className="font-medium text-[26px]">Visi</h1>
-                <p className="text-sm md:text-base text-grey1 font-montserrat tracking-wide leading-tight text-justify">
-                  Menjadi pelopor dalam industri furnitur dengan menghadirkan
-                  desain inovatif yang memenuhi kebutuhan setiap rumah.
+                <h1 className="text-[26px] font-medium">Visi</h1>
+                <p className="text-justify font-montserrat text-sm leading-tight tracking-wide text-grey1 md:text-base">
+                  Menjadi pelopor dalam industri furnitur dengan menghadirkan desain inovatif yang
+                  memenuhi kebutuhan setiap rumah.
                 </p>
               </div>
               <div>
-                <h1 className="font-medium text-[26px] lg:-ml-4">Misi</h1>
-                <ul className="list-decimal text-sm md:text-base text-grey1 font-montserrat leading-tight tracking-wide text-justify list-inside">
+                <h1 className="text-[26px] font-medium lg:-ml-4">Misi</h1>
+                <ul className="list-inside list-decimal text-justify font-montserrat text-sm leading-tight tracking-wide text-grey1 md:text-base lg:list-outside">
                   <li>
-                    Memberikan furnitur berkualitas tinggi yang mengutamakan
-                    estetika dan kenyamanan.
+                    Memberikan furnitur berkualitas tinggi yang mengutamakan estetika dan
+                    kenyamanan.
                   </li>
                   <li>
-                    Menciptakan pengalaman belanja yang mudah dan menyenangkan
-                    bagi pelanggan kami.
+                    Menciptakan pengalaman belanja yang mudah dan menyenangkan bagi pelanggan kami.
                   </li>
                   <li>
-                    Menginspirasi hunian impian dengan solusi interior yang
-                    terjangkau dan tahan lama.
+                    Menginspirasi hunian impian dengan solusi interior yang terjangkau dan tahan
+                    lama.
                   </li>
                 </ul>
               </div>
@@ -191,12 +184,12 @@ export default function Home() {
       </section>
 
       {/* Nilai Section */}
-      <section className="p-5 lg:px-[75px] bg-black pb-0">
+      <section className="bg-black p-5 pb-0 lg:px-[75px]">
         <div className="grid grid-cols-12">
           <div className="col-span-12 lg:col-span-7">
             <div className="relative">
-              <div className="absolute top-4 w-6 h-6 bg-white"></div>
-              <h1 className="ml-10 my-[30px] font-medium text-2xl lg:text-[44px] font-montserrat leading-tight text-white uppercase">
+              <div className="absolute top-4 h-6 w-6 bg-white"></div>
+              <h1 className="my-[30px] ml-10 font-montserrat text-2xl font-medium uppercase leading-tight text-white lg:text-[44px]">
                 keunggulan produk kami untuk anda
               </h1>
             </div>
@@ -204,54 +197,52 @@ export default function Home() {
         </div>
         <div>
           <div className="grid grid-cols-12 bg-white">
-            <div className="col-span-12 order-2 lg:order-1 lg:col-span-6 p-8 lg:py-[52px] lg:px-[60px]">
-              <h1 className="text-[26px] py-2 font-medium underline decoration-[#2C57F4]">
+            <div className="order-2 col-span-12 p-8 lg:order-1 lg:col-span-6 lg:px-[60px] lg:py-[52px]">
+              <h1 className="py-2 text-[26px] font-medium underline decoration-[#2C57F4]">
                 Nilai-Nilai Kami
               </h1>
-              <ul className="px-5 relative list-decimal font-montserrat text-lg font-semibold">
+              <ul className="relative list-decimal px-5 font-montserrat text-lg font-semibold">
                 <li className="py-1">
-                  <h2 className="list-decimal font-semibold font-montserrat text-lg">
+                  <h2 className="list-decimal font-montserrat text-lg font-semibold">
                     Kualitas Unggul
                   </h2>
-                  <p className="text-sm md:text-base font-normal text-justify text-grey1">
-                    Setiap produk dirancang dengan standar tinggi agar mampu
-                    memenuhi harapan Anda untuk hunian yang sempurna.
+                  <p className="text-justify text-sm font-normal text-grey1 md:text-base">
+                    Setiap produk dirancang dengan standar tinggi agar mampu memenuhi harapan Anda
+                    untuk hunian yang sempurna.
                   </p>
                 </li>
                 <li className="py-1">
-                  <h2 className="list-decimal font-semibold font-montserrat text-lg">
+                  <h2 className="list-decimal font-montserrat text-lg font-semibold">
                     Desain yang Modern
                   </h2>
-                  <p className="text-sm md:text-base font-normal text-justify text-grey1">
-                    Dengan berbagai pilihan desain mulai dari minimalis hingga
-                    klasik elegan, kami hadir untuk mempercantik setiap sudut
-                    rumah Anda.
+                  <p className="text-justify text-sm font-normal text-grey1 md:text-base">
+                    Dengan berbagai pilihan desain mulai dari minimalis hingga klasik elegan, kami
+                    hadir untuk mempercantik setiap sudut rumah Anda.
                   </p>
                 </li>
                 <li className="py-1">
-                  <h2 className="list-decimal font-semibold font-montserrat text-lg">
+                  <h2 className="list-decimal font-montserrat text-lg font-semibold">
                     Perawatan Mudah dan Tahan Lama
                   </h2>
-                  <p className="text-sm md:text-base font-normal text-justify text-grey1">
-                    Furnitur kami didesain agar mudah dirawat dan tetap tampil
-                    baru untuk waktu yang lama, menghemat waktu dan biaya
-                    perawatan.
+                  <p className="text-justify text-sm font-normal text-grey1 md:text-base">
+                    Furnitur kami didesain agar mudah dirawat dan tetap tampil baru untuk waktu yang
+                    lama, menghemat waktu dan biaya perawatan.
                   </p>
                 </li>
                 <li className="py-1">
-                  <h2 className="list-decimal font-semibold font-montserrat text-lg">
+                  <h2 className="list-decimal font-montserrat text-lg font-semibold">
                     Pilihan Beragam untuk Semua Kebutuhan
                   </h2>
-                  <p className="text-sm md:text-base font-normal text-justify text-grey1">
-                    Kami menawarkan berbagai pilihan produk, mulai dari furnitur
-                    untuk ruang tamu, kamar tidur, hingga dekorasi rumah,
-                    semuanya dapat disesuaikan dengan selera dan kebutuhan Anda.
+                  <p className="text-justify text-sm font-normal text-grey1 md:text-base">
+                    Kami menawarkan berbagai pilihan produk, mulai dari furnitur untuk ruang tamu,
+                    kamar tidur, hingga dekorasi rumah, semuanya dapat disesuaikan dengan selera dan
+                    kebutuhan Anda.
                   </p>
                 </li>
               </ul>
             </div>
-            <div className="col-span-12 order-1 lg:order-2 lg:col-span-6">
-              <img src="assets/img2.png" alt="" className="w-full md:h-72 lg:h-auto object-cover" />
+            <div className="order-1 col-span-12 lg:order-2 lg:col-span-6">
+              <img src="assets/img2.png" alt="" className="w-full object-cover md:h-72 lg:h-auto" />
             </div>
           </div>
         </div>
@@ -259,30 +250,26 @@ export default function Home() {
 
       {/* Product Section */}
       <section className="p-5 lg:px-[75px]">
-        <div className=" grid grid-cols-12">
+        <div className="grid grid-cols-12">
           <div className="col-span-12 lg:col-span-8">
             <div className="relative">
-              <div className="absolute top-4 w-6 h-6 bg-black"></div>
-              <h1 className="ml-10 mt-[30px] font-semibold text-2xl lg:text-[44px] leading-tight font-montserrat uppercase">
+              <div className="absolute top-4 h-6 w-6 bg-black"></div>
+              <h1 className="ml-10 mt-[30px] font-montserrat text-2xl font-semibold uppercase leading-tight lg:text-[44px]">
                 produk furnitur untuk hunian anda
               </h1>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-[10px]">
+        <div className="my-[10px] grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {showAll
-            ? products.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))
+            ? products.map((product) => <ProductCard key={product.id} product={product} />)
             : products
                 .slice(0, 3)
-                .map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
+                .map((product) => <ProductCard key={product.id} product={product} />)}
         </div>
         {showAll ? (
           <button
-            className="bg-black text-white text-sm px-[10px] py-[8px] hover:bg-slate-700 transition-all duration-200 ease-in-out"
+            className="bg-black px-[10px] py-[8px] text-sm text-white transition-all duration-200 ease-in-out hover:bg-slate-700"
             type="button"
             onClick={handleShowAll}
           >
@@ -290,7 +277,7 @@ export default function Home() {
           </button>
         ) : (
           <button
-            className="bg-black text-white text-sm px-[10px] py-[8px] hover:bg-slate-700 transition-all duration-200 ease-in-out"
+            className="bg-black px-[10px] py-[8px] text-sm text-white transition-all duration-200 ease-in-out hover:bg-slate-700"
             type="button"
             onClick={handleShowAll}
           >
@@ -300,19 +287,18 @@ export default function Home() {
       </section>
 
       {/* Testimoni Section */}
-      <section className="p-5 lg:px-[75px] pb-10">
-        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <section className="p-5 pb-10 lg:px-[75px]">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div className="flex gap-[20px]">
-            <div className="p-3 mt-4 h-6 bg-black"></div>
-            <div className="flex gap-3 flex-col">
-              <h1 className="font-semibold text-2xl lg:text-[44px] leading-tight font-montserrat uppercase">
+            <div className="mt-4 h-6 bg-black p-3"></div>
+            <div className="flex flex-col gap-3">
+              <h1 className="font-montserrat text-2xl font-semibold uppercase leading-tight lg:text-[44px]">
                 apa kata pelanggan kami
               </h1>
-              <p className="text-sm text-grey1 font-poppins text-justify">
-                Kami bangga telah menjadi bagian dari perjalanan banyak
-                pelanggan untuk menciptakan ruang impian mereka. Inilah beberapa
-                cerita dan ulasan dari mereka yang telah merasakan kualitas
-                produk dan layanan kami
+              <p className="text-justify font-poppins text-sm text-grey1">
+                Kami bangga telah menjadi bagian dari perjalanan banyak pelanggan untuk menciptakan
+                ruang impian mereka. Inilah beberapa cerita dan ulasan dari mereka yang telah
+                merasakan kualitas produk dan layanan kami
               </p>
             </div>
           </div>
@@ -322,7 +308,7 @@ export default function Home() {
                 <TestimoniCard key={data.id} testimoni={data} />
               ))}
             </div>
-            <div className="w-full flex justify-center gap-2 mt-2">
+            <div className="mt-2 flex w-full justify-center gap-2">
               <button onClick={() => scrollLeft()} className="bg-black p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -365,19 +351,18 @@ export default function Home() {
       </section>
 
       {/* Kontak Section */}
-      <section className="w-full bg-black p-5 lg:p-[75px] flex flex-col gap-16">
-        <div id="kontak" className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <section className="flex w-full flex-col gap-16 bg-black p-5 lg:p-[75px]">
+        <div id="kontak" className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div className="flex gap-[20px]">
-            <div className="p-3 lg:mt-4 h-6 bg-white"></div>
-            <div className="flex gap-3 flex-col">
-              <h1 className="font-semibold text-white text-2xl lg:text-[44px] font-montserrat uppercase">
+            <div className="h-6 bg-white p-3 lg:mt-4"></div>
+            <div className="flex flex-col gap-3">
+              <h1 className="font-montserrat text-2xl font-semibold uppercase text-white lg:text-[44px]">
                 Hubungi Kami
               </h1>
-              <p className="text-sm text-white font-poppins text-justify">
-                Kami bangga telah menjadi bagian dari perjalanan banyak
-                pelanggan untuk menciptakan ruang impian mereka. Inilah beberapa
-                cerita dan ulasan dari mereka yang telah merasakan kualitas
-                produk dan layanan kami
+              <p className="text-justify font-poppins text-sm text-white">
+                Kami bangga telah menjadi bagian dari perjalanan banyak pelanggan untuk menciptakan
+                ruang impian mereka. Inilah beberapa cerita dan ulasan dari mereka yang telah
+                merasakan kualitas produk dan layanan kami
               </p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.772802288226!2d109.59421807501859!3d-7.7075120763473715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7acbccdabcbe0b%3A0x1280deb733d08431!2sFadhlu%20Ibnu!5e0!3m2!1sid!2sid!4v1737617674162!5m2!1sid!2sid"
@@ -389,52 +374,47 @@ export default function Home() {
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
               <div>
-                <p className="font-medium font-poppins text-white">
+                <p className="font-poppins font-medium text-white">
                   📍 Kunjungi showroom atau kantor kami di:
                 </p>
-                <p className="text-sm text-white font-poppins">
-                  Jl. Bukit Lestari No. 45, Kelurahan Sekaran, Kecamatan
-                  Gunungpati, Kota Semarang, Jawa Tengah 50229
+                <p className="font-poppins text-sm text-white">
+                  Jl. Bukit Lestari No. 45, Kelurahan Sekaran, Kecamatan Gunungpati, Kota Semarang,
+                  Jawa Tengah 50229
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-5 p-10 bg-[#1E1E1E] h-fit">
-            <h1 className="font-medium text-[26px] text-white">
-              Formulir Kontak
-            </h1>
-            <p className="text-sm text-white font-poppins text-justify">
-              Isi formulir di bawah ini, dan tim kami akan segera menghubungi
-              Anda:
+          <div className="flex h-fit flex-col gap-5 bg-[#1E1E1E] p-10">
+            <h1 className="text-[26px] font-medium text-white">Formulir Kontak</h1>
+            <p className="text-justify font-poppins text-sm text-white">
+              Isi formulir di bawah ini, dan tim kami akan segera menghubungi Anda:
             </p>
             <form className="flex flex-col gap-3">
               <div className="flex flex-col gap-1">
-                <label className="text-sm text-white font-poppins">Nama</label>
+                <label className="font-poppins text-sm text-white">Nama</label>
                 <input
                   placeholder="Masukkan nama anda"
-                  className="bg-transparent p-3 text-sm text-white font-poppins border-white border outline-white"
+                  className="border border-white bg-transparent p-3 font-poppins text-sm text-white outline-white"
                   type="text"
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <label className="text-sm text-white font-poppins">
-                  Email atau Nomor WhatsApp
-                </label>
+                <label className="font-poppins text-sm text-white">Email atau Nomor WhatsApp</label>
                 <input
                   placeholder="Masukkan email atau nomor whatsapp anda"
-                  className="bg-transparent p-3 text-sm text-white font-poppins border-white border outline-white"
+                  className="border border-white bg-transparent p-3 font-poppins text-sm text-white outline-white"
                   type="text"
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <label className="text-sm text-white font-poppins">Pesan</label>
+                <label className="font-poppins text-sm text-white">Pesan</label>
                 <textarea
                   placeholder="Masukkan pesan anda"
-                  className="bg-transparent p-3 text-sm text-white font-poppins border-white border outline-white"
+                  className="border border-white bg-transparent p-3 font-poppins text-sm text-white outline-white"
                   type="text"
                 />
               </div>
-              <button className="bg-black text-white font-poppins py-3 focus:border-white focus:border transition-all duration-300">
+              <button className="bg-black py-3 font-poppins text-white transition-all duration-300 focus:border focus:border-white">
                 Kirim Pesan
               </button>
             </form>

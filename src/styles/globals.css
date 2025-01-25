@@ -5,11 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   /* border: 1 solid red; */
 }
 .container {
-  @apply max-w-screen-xl mx-auto;
+  @apply mx-auto max-w-screen-xl;
 }
 
 .font-noto-serif {

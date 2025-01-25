@@ -1,33 +1,26 @@
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-      <div className="flex flex-col gap-5 col-span-2">
-        <div className="flex gap-3 align-center">
-          <img src="assets/Logo.png" alt="logo" className="w-9 h-9" />
-          <h1 className="text-lg font-semibold font-montserrat text-white p-0">
-            InSoft.
-          </h1>
+    <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+      <div className="col-span-2 flex flex-col gap-5">
+        <div className="align-center flex gap-3">
+          <img src="assets/Logo.png" alt="logo" className="h-9 w-9" />
+          <h1 className="p-0 font-montserrat text-lg font-semibold text-white">InSoft.</h1>
         </div>
-        <h1 className="text-white text-[52px] lg:text-[64px] leading-[62px] font-medium">
-          Hadirkan{" "}
-          <span className="underline decoration-[#2C57F4]">
-            Keindahan dan Kenyamanan
-          </span>{" "}
+        <h1 className="text-[52px] font-medium leading-[62px] text-white lg:text-[64px]">
+          Hadirkan <span className="underline decoration-[#2C57F4]">Keindahan dan Kenyamanan</span>{' '}
           di Rumah Anda
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="flex flex-col gap-3 order-2 md:order-1">
-          <h1 className="text-white font-semibold font-montserrat text-[26px] underline">
-            Menu
-          </h1>
-          <ul className="grid grid-cols-2 md:grid-cols-1 gap-1">
+        <div className="order-2 flex flex-col gap-3 md:order-1">
+          <h1 className="font-montserrat text-[26px] font-semibold text-white underline">Menu</h1>
+          <ul className="grid grid-cols-2 gap-1 md:grid-cols-1">
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item text-white font-medium font-poppins text-sm uppercase"
+                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
               >
                 beranda
               </a>
@@ -35,7 +28,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item text-white font-medium font-poppins text-sm uppercase"
+                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
               >
                 tentang kami
               </a>
@@ -43,7 +36,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item text-white font-medium font-poppins text-sm uppercase"
+                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
               >
                 produk
               </a>
@@ -51,7 +44,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item text-white font-medium font-poppins text-sm uppercase"
+                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
               >
                 testimoni
               </a>
@@ -59,7 +52,7 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item text-white font-medium font-poppins text-sm uppercase"
+                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
               >
                 lokasi
               </a>
@@ -67,15 +60,15 @@ const Footer = () => {
             <li className="relative">
               <a
                 href="#"
-                className="navbar-item text-white font-medium font-poppins text-sm uppercase"
+                className="navbar-item font-poppins text-sm font-medium uppercase text-white"
               >
                 kontak
               </a>
             </li>
           </ul>
         </div>
-        <div className="md:order-2 order-1">
-          <h1 className="text-white font-semibold font-montserrat text-[26px] underline">
+        <div className="order-1 md:order-2">
+          <h1 className="font-montserrat text-[26px] font-semibold text-white underline">
             Media Sosial
           </h1>
           <div className="flex gap-3">
