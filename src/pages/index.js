@@ -301,12 +301,12 @@ lg:w-[374px] */}
       </section>
 
       {/* Testimoni Section */}
-      <section className="px-[75px] pb-10">
+      <section className="p-5 lg:px-[75px] pb-10">
         <div className=" grid grid-cols-12 gap-10">
-          <div className="col-span-6">
+          <div className="col-span-12 lg:col-span-6">
             <div className="relative">
               <div className="absolute top-4 w-6 h-6 bg-black"></div>
-              <h1 className="ml-10 mt-[30px] font-semibold text-[44px] leading-tight font-montserrat uppercase">
+              <h1 className="ml-10 mt-[30px] font-semibold text-2xl lg:text-[44px] leading-tight font-montserrat uppercase">
                 apa kata pelanggan kami
               </h1>
             </div>
@@ -317,11 +317,8 @@ lg:w-[374px] */}
               layanan kami
             </p>
           </div>
-          {/* absolute left-0 top-1/2 transform -translate-y-1/2 */}
-          {/* absolute right-0 top-1/2 transform -translate-y-1/2  */}
-          <div className="col-span-6 w-full">
+          <div className="col-span-12 lg:col-span-6 w-full">
             <div id="scroll-container" className="flex gap-3 overflow-x-scroll">
-              {/* p-5 flex flex-col justify-between w-[327px] h-[344.58px] */}
               {
                 testimoini.map((data) => (
                   <TestimoniCard key={data.id} testimoni={data}/>
