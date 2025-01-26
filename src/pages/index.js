@@ -1,5 +1,5 @@
 import React from 'react';
-import MyNavbar from '../components/Navbar';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
 import TestimoniCard from '../components/TestimoniCard';
@@ -32,7 +32,7 @@ const products = [
   },
 ];
 
-const testimoini = [
+const testimoni = [
   {
     id: 1,
     text: 'Luar biasa! Furnitur dari Insoft sangat berkualitas dan desainnya modern. Proses pemesanan juga mudah dan pengirimannya tepat waktu. Sangat puas!',
@@ -48,7 +48,7 @@ const testimoini = [
     rating: 4,
   },
   {
-    id: 2,
+    id: 3,
     text: 'Saya suka dengan pilihan furnitur yang banyak dan harga yang kompetitif. Timnya juga sangat membantu dalam memberikan rekomendasi.',
     profil: 'assets/testi1.jpeg',
     name: 'Rizal, Bandung',
@@ -79,7 +79,7 @@ export default function Home() {
 
   return (
     <div className="font-poppins">
-      <MyNavbar />
+      <Navbar />
 
       {/* Hero Section */}
       <section className="grid grid-cols-12 px-5 py-5 pt-20 lg:px-[75px]">
@@ -304,7 +304,7 @@ export default function Home() {
           </div>
           <div className="w-full">
             <div id="scroll-container" className="flex gap-3 overflow-x-scroll">
-              {testimoini.map((data) => (
+              {testimoni.map((data) => (
                 <TestimoniCard key={data.id} testimoni={data} />
               ))}
             </div>

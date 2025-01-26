@@ -15,7 +15,7 @@ const Footer = () => {
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="order-2 flex flex-col gap-3 md:order-1">
+        <div className="order-2 flex flex-col items-start justify-start gap-3 md:order-1">
           <h1 className="font-montserrat text-[26px] font-semibold text-white underline">Menu</h1>
           <ul className="grid grid-cols-2 gap-1 md:grid-cols-1">
             <li className="relative">
@@ -72,18 +72,34 @@ const Footer = () => {
           <h1 className="font-montserrat text-[26px] font-semibold text-white underline">
             Media Sosial
           </h1>
-          <div className="flex gap-3">
+          <div className="flex gap-3 pt-1">
             <a href="">
-              <img src="assets/whatsapp.svg" alt="whatsapp" />
+              <img
+                src="assets/whatsapp.svg"
+                alt="whatsapp"
+                className="rounded-lg border-2 border-black hover:border-white"
+              />
             </a>
             <a href="">
-              <img src="assets/facebook.svg" alt="facebook" />
+              <img
+                src="assets/facebook.svg"
+                alt="facebook"
+                className="rounded-lg border-2 border-black hover:border-white"
+              />
             </a>
             <a href="">
-              <img src="assets/x.svg" alt="x" />
+              <img
+                src="assets/x.svg"
+                alt="x"
+                className="rounded-lg border-2 border-black hover:border-white"
+              />
             </a>
             <a href="">
-              <img src="assets/linkedin.svg" alt="linkedin" />
+              <img
+                src="assets/linkedin.svg"
+                alt="linkedin"
+                className="rounded-lg border-2 border-black hover:border-white"
+              />
             </a>
           </div>
         </div>
